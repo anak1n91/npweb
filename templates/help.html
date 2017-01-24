@@ -1,0 +1,28 @@
+{% extends "default.html" %}
+{% block title %}Help &bull; NightProjects{% endblock %}
+{%block content %}
+    <h1 class="center">Help/FAQ</h1>
+    <h2>What is IRC?</h2>
+    <p>IRC stands for Internet Relay Chat. It's been used widely for years as a form of communication. It allows a group chat, as well as private messaging</p>
+    <h2>How do I message someone privately?</h2>
+    <p>Generally speaking, correct IRC etiquette would be to ask the person if it is okay to privately message (pm) them, after that you just run the following command:</p>
+    <pre>/msg username this is a private message</pre>
+    <p>This will open another tab or window with the username you've pm'd.</p>
+    <h2>Is IRC safe?</h2>
+    <p>IRC is generally safe, and I do not log private conversations. The main chat is logged, but only for the purpose of statistics. The chat all depends on what you choose to make it, it is entirely based on the users input, but moderators (referred to as operators on IRC) will do their best to keep things respectful and polite.</p>
+    <h2>What if I want to have my own channel with my own group of friends?</h2>
+    <p>That's entirely fine, and you can do so by creating a channel which is very simple with this command:</p>
+    <pre>/join #channel-name</pre>
+    <p>Simple as that. You can invite the people you want by running:</p>
+    <pre>/invite username #channel-name</pre>
+    <p>Channels require a # in front of them.</p>
+    <h2>What kind of IRCd is this server running?</h2>
+    <p>This server is currently running UnrealIRCD with Anope services. You may register your username so that it is only yours tied to an e-mail and password. This e-mail and password is saved to the disk encrypted and is not accessible directly by anyone, including myself. You may also register channels that you want to help be managed by services. You may register your username like so:</p>
+    <pre>/msg nickserv register <span class="underline">password</span> <span class="underline">e-mail address</span></pre>
+    <p>You may register a channel by similar ways:</p>
+    <pre>/msg chanserv register <span class="underline">#channel-name</span> <span class="underline">password</span> <span class="underline">description of channel</span></pre>
+    <p>Please note: your username must be registered with the server before you may register a channel</p>
+    <p>You will need to identify yourself with the services everytime you log in:</p>
+    <pre>/msg nickserv identify <span class="underline">password</span></pre>
+    <p>Be respectful and kind. Follow any rules someone has in a channel. Be polite.</p>
+{% endblock %}

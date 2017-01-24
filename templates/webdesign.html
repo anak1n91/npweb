@@ -1,0 +1,60 @@
+{% extends "default.html" %}
+{% block title %}Webdesign &bull; NightProjects{% endblock %}
+{% block activeHome %}{% endblock %}
+{% block activeWebdesign %}class="active"{% endblock %}
+{% block menu %}
+    <div id="menu">
+        <ul>
+            <li><a href="/"><img src="/static/images/home.png" width="19" height="19" alt="" /> Home</a></li>
+            <li><a id="about-menu" href="#" title="Click for more"><img src="/static/images/about.png" height="19" width="19" alt="" /> About</a>
+                <ul id="about-menu-1" class="dropdown-menu">
+                    <li><a href="/aboutsite"><img src="/static/images/about-site.png" width="19" height="19" alt=""/> About site</a></li>
+                    <li><a href="/about"><img src="/static/images/aboutme.png" height="19" width="19" /> About me</a></li>
+                </ul>
+            </li>
+            <li><a href="/chat" title="Chat"><img src="/static/images/chat.png" height="19" width="19" alt="" /> Chat</a></li>
+            <li><a href="/contact"><img src="/static/images/contact.png" height="19" width="19" /> Contact me</a></li>
+            <li><a id="other-menu" href="#" title="Click for more"><img src="/static/images/extra.png" height="19" width="19" alt=""/> Extra</a>
+                <ul id="other-menu-1" class="dropdown-menu">
+                    <li><a href="http://blog.nightprojects.org" title="Blog" target="_blank"><img src="/static/images/blog.png" height="19" width="19" alt="" /> My blog</a></li>
+                    <li><a href="http://git.nightprojects.org" title="Git server" target="_blank"><img src="/static/images/git.png" height="18" width="16" alt="" /> Git Server</a></li>
+                    <li><a href="http://goo.gl/a3vUFP" title="Google+" target="_blank"><img src="/static/images/google.png" height="19" width="19" alt="" /> Google+</a></li>
+                    <li><a href="https://twitter.com/anak1n91" title="Follow me on Twitter" target="_blank"><img height="15" width="18" alt="" src="/static/images/twitter.png" /> Twitter</a></li>
+                    <li><a href="https://instagram.com/anakin91" title="Follow me on Instagram" target="_blank"><img src="/static/images/instagram.gif" height="18" width="18" alt="" />Instagram</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="/webdesign" title="Webdesign"><img src="/static/images/webdesign.png" width="19" height="19" alt="" /> Webdesign</a></li>
+        </ul>
+    </div>
+{% endblock %}
+{% block content %}
+    <h1 class="center">Website Design Examples</h1>
+    <p>Here are some websites I've done recently, including this website for reference of my website design. Every example has a zip file with the CSS and HTML used to create the webpages.</p>
+    <p>All examples pass the <a href="http://validator.w3.org/" title="W3C Validator" target="_blank">W3C Validator</a> tests.</p>
+    <h3 class="center">Example Web design templates</h3>
+    <table width="100%" align="center">
+        <tr>
+            <td>
+                <div class="gallery">
+                <a href="/example/blog" title="Simple Blog" target="_blank">
+                <img src="/static/images/simple_blog.png" height="240" width="360" alt="Simple Blog" />
+                </a>
+                <div class="desc"><a href="/static/downloads/simple_blog.zip" title="Download Simple Blog CSS and HTML">Download Simple Blog CSS and HTML</a></div>
+                </div>
+                <div class="gallery">
+                  <a href="/example/light-website" title="Light Website" target="_blank">
+                    <img src="/static/images/light-website.png" height="240" width="360" alt="Light Website" />
+                  </a>
+                  <div class="desc"><a href="/static/downloads/light_website.zip" title="Download Light Website CSS and HTML">Download Light Website CSS and HTML</a></div>
+                </div>
+             </td>
+       <tr>
+    </table>
+    <h3 class="center">Examples of live websites</h3>
+    <p>Just a list of actual live websites I've designed.</p>
+    <ul>
+        <li><a href="http://vorluxhosting.com" title="Vorlux Hosting" target="_blank">Vorlux Hosting</a></li>
+        <li><a href="http://games.nightprojects.org" title="Games NightProjects" target="_blank">Game website</a></li>
+        <li><a href="http://blog.nightprojects.org" title="Blog" target="_blank">/dev/random - blog</a></li>
+    </ul>
+{% endblock %}

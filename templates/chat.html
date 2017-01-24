@@ -1,0 +1,9 @@
+{% extends "default.html" %}
+{% block title %}Chat &bull; NightProjects{% endblock %}
+{% block activeHome %}{% endblock %}
+{% block activeChat %}class="active"{% endblock %}
+{% block content %}
+    <h1 class="center">Chat</h1>
+    <p>Please choose a username and a channel. Default channel is <code>#lobby</code>. Used for general chat and for people to reach me via IRC. You can find <a href="/help" title="Help" target="_blank">help here</a>.</p>
+    <p class="center"><iframe src="http://chat.nightprojects.org:9090" style="border:0; width:100%; height:550px; border-radius:4px;"></iframe></p>
+{% endblock %}

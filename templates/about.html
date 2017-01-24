@@ -1,0 +1,70 @@
+{% extends "default.html" %}
+    {% block title %}About me &bull; NightProjects{% endblock %}
+    {% block activeHome %}{% endblock %}
+    {% block activeAbout %}class="active"{% endblock %}
+    {% block content %}
+    <h1 class="center">About me</h1>
+    <p><img class="left" src="/static/images/me.jpg" width="190" height="260" /></p>
+    <p>One cannot simply produce any statements that would make another say, 'I know that person', but I'm going to try.</p>
+    <p>There are many different parts about me. I'm 23 years old from the San Fransisco Bay Area. Here's a list of some of the things I do:</p>
+    <table width="75%">
+        <tr>
+            <td>&rArr; Write Python</td>
+        </tr>
+        <tr>
+            <td>&rArr; Web design</td>
+        </tr>
+        <tr>
+            <td>&rArr; Skateboard</td>
+        </tr>
+        <tr>
+            <td>&rArr; IRC</td>
+        </tr>
+        <tr>
+            <td>&rArr; Write in a blog</td>
+        </tr>
+        <tr>
+            <td>&rArr; Linux Sys Admin</td>
+        </tr>
+        <tr>
+            <td>&rArr; Help out in Funtoo IRC</td>
+        </tr>
+        <tr>
+            <td>&rArr; Hang out with my cat</td>
+        </tr>
+        <tr>
+            <td>&rArr; Play video games</td>
+        </tr>
+    </table>
+    <p>So many more things. I'll elaborate on these, though.</p>
+    <div class="clearfix"></div>
+    <h2 class="subtitle">Python &amp; Web design</h2>
+    <p>I'm a dyslexic Python coder. I love Python. I've worked on a few projects with people over the years, but primarily my focus as of late has been on Flask. This website is run by Flask, another website I run is run by Flask. It just works really well. I have written a few programs with Python, namely 'Autobuild' and 'PyBlog'. I have to get the source for those from someone else because I no longer have them. I will update this as soon as I do.</p>
+    <p>I like Python so much because the syntax is very easy for me to read, especially because I'm dyslexic. I've done other langauges before, such as PHP, but just never really got my attention like Python did. 'Autobuild' was a tool I wrote that builds Funtoo and Gentoo Linux livecd images using <code>mkisofs</code> and <code>mksqaushfs</code>.</p>
+    <p>'PyBlog' was exactly what you are probably thinking it is. A  blogging framework for a selfhosted blog using Flask. It had a login feature, used PostgreSQL for databases, it was all around pretty decent. It then would just shoot out to an index page and you could do one of two things with it. You could run it on a ReverseProxy with Apache to serve the port (if not listening on default <code>80</code>), you could set it up to work as a WSGI application (smartest way, I think), or you could just run it standalone as your webserver and just have the blog hosted on the default port. But either way, there was minimal configuration. You would run <code>config.py</code> and it would prompt for things like 'Title of your blog', 'Description of your blog', and it would put those into variables and then pyblog.py would be copied to <code>/usr/bin/pyblog</code>, and you could run it and it would ask for what editor you wanted to use (<code>emacs</code>, <code>nano</code>, <code>vi</code>/<code>vim</code>. I really enjoyed writing it, and once I get it back I'm going to add some more features. I never did fully release it, though so I'll have to do that.</p>
+    <p>Web design is something that I got into a lot of years ago, in fact it's what introduced me to writing code in the first place. My first website looked pretty bad, with the menu just being no styled links, with a black background and green text (like the old terminal computers). I got into Javascript a little bit when I was younger, but I wasn't a huge fan so I didn't use it much, and now I do for other peoples websites. This is the fist time I've had my own websites using any <code>jQuery</code>, but it's just for the dropdown menu. Which is achievable using CSS, but I just wanted something quick.</p>
+    <p>The first time I designed a website for someone else was a lot of years ago, and it probably wasn't my best work either. I'd like to think I've come a long way since those days.</p>
+    <p>Web design is something I used to loathe, primarily because I just wasn't too big a fan of writing everything out, but after I started doing it for other people it started growing on me more and more, and now I plan to use it as a way to increase my income since I am unemployed. It's something that is a lot of fun to see how just words can turn into such a cool looking webpage. I have designed my own websites for as long as I can remember, whether my blogs, businesses, you name it. I really enjoy writing code, even though it is difficult for me due to learning disabilities, it's one of the few things in life that calm me down.</p>
+    <h2 class="subtitle">Skateboarding</h2>
+    <p>I've been skateboarding since I was in 5<sup>th</sup> grade, around the age of 10 years old. It's something I love to do. I broke my ankle and my heel when I was 17 and I haven't really fully been able to get back to it. I grew up in Michigan, so learning how to skateboard there was not the easiest thing to do with the snow, rain, and just all around bad conditions on the pavement. Somehow I managed though, and it's something I fell in love with.</p>
+    <p>My current skateboard is a Blind team board with Hi-Fi wheels, Bone Swiss Ceramics, and the Jade Krux Trucks.</p>
+    <p>My favorite trick, and most consistent for that matter, are kickflips. I don't know why, but I can land them every single time. My shoes are Lakai Manchester selects, black and lime green. They're comfortable. I also have a pair of Nike SB Dunks Chun-Li edition, Adidas skateboarding Campus, and a few pair of slip ons.</p>
+    <h2 class="subtitle">IRC &amp; My blog</h2>
+    <p>I'm very active in IRC. I have my own network, NightProjects IRC, which you can find via the <a href="/chat">chat</a> tab. I'm also active on Freenode's IRC under the nick <code>anak1n</code>. I frequent a few channels, but the main one you can find me in is <code>#funtoo</code>.</p>
+    <p>I do write in a blog, and try to almost every day these days. You can see it <a href="http://blog.nightprojects.org" title="Blog" target="_blank">here</a> or you can see if under the Extra tab at the top (there's the drop down menu). I write about a lot of different things from my coding adventures, to just every day life. I use it as an outlet to let out some frustrations I'm feeling, or if I'm just having a down day.</p>
+    <p>Feel free to read and subscribe to it, I'm currently doing a <code>365 Day Journaling Challenge</code>.</p>
+    <h2 class="subtitle">Linux Sys Admin &amp; Help out in Funtoo IRC</h2>
+    <p>I'm huge into Linux, and anyone who knows me knows this to be true. Especially Funtoo Linux. It is hands down the only distribution I will use. The reason being is because the amount of power I have over my system is great. I don't have to worry about bloat from packages for things I don't need, and I can customize what I install with the various <code>USE</code> flags. But, you can read more about it <a href="http://www.funtoo.org" title="Funtoo" target="_blank">here</a>.</p>
+    <p>I currently maintain 4 Linux servers. This one, another one that's hosting Minecraft and the IRC server, another with Rackspace that's hosting another IRC server with Minecraft as well, another that is used specifically for a private <code>Git</code> repository, and lastly one that is hosting virtual servers and containers (<code>LXC</code> and <code>KVM</code>). All of these servers are currently running Funtoo and I love it.</p>
+    <p>I am good with a lot of different things as well, from Nginx to Apache2, LXC to OpenVZ, KVM to Xen, automation is my best friend. I write a lot of scripts to just automate things for me. I know databases, sqlite3, PostgreSQL, MySQL, I can get around any Linux server. My dream job is to start my hosting company, I love servers. I just love being a Linux sys/server admin. That's what I want to do.</p>
+    <p>I also really love virtualization. Containers, VM's, if I can have one host and a bunch of little servers, I am happy. I plan to finish launching my hosting company, <a href="http://vorluxhosting.com" title="Vorlux Hosting" target="_blank">Vorlux Hosting</a> soon.</p>
+    <p>I help out in Funtoo's IRC channel a lot, under the nick anak1n on Freenode. I just help with people who come in and have questions about the install or broken packages. I was once a Funtoo core team member, but that is no longer. That was the happiest time of my life though, being able to work with drobbins. But, now I just lurk the IRC and help out when I can. You should come say hi sometime.</p>
+    <p>Here is the latest screenshot of my <a href="/static/images/fluxbox.png" title="Fluxbox" target="_blank">Funtoo Linux Fluxbox</a></p>
+    <h2 class="subtitle">Hang out with my cat &amp; Video games</h2>
+    <p>I have a cat named Eevee, you probably saw her on the welcome page. I adopted her when she was 8 weeks old and have had her for 4 years now. She is a big part of my life and I have a million pictures of her. I had to drive almost to Canada to get her when I lived in Michigan, and not by Detroit. I drove up into the thumb of Michigan, and it was a fun adventure.</p>
+    <p>She has been a very big help for me, especially with mental illness and help lowering my stress and anxiety. I love my cat very much. I don't know what I would do without her.</p>
+    <p>Eevee does the normal cat stuff, run around, sleep a lot, clean herself (<strong>constantly</strong>), and cuddle with me. She's a healthy, happy cat.</p>
+    <p>I play a lot of video games. In fact, I play so much that I made a website dedicated to all my gaming stuff: <a href="http://games.nightprojects.org" title="Games I play" target="_blank">Games I play</a>.</p>
+    <p>I play a lot of Minecraft, Sims 3, BioShock Infinite, Halo Combat Evolved (the original), and so many more. I like to play with other people as well as just by myself. It depends on what mood I'm in. I mentioned before that I have two Minecraft servers. If you're interested, feel free to <a href="/contact">contact me</a>.</p>
+    <p>That being said, there is a lot more to me than just this. I hope you learned a little bit about the person running the website. I hope you enjoy it, and I will continue to add new stuff, and redesign as time goes on. Have a nice day!</p>
+    {% endblock %}
