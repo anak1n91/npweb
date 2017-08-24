@@ -50,17 +50,21 @@ def help():
 def page_not_found(e):
     return render_template('404.html'), 404
 
+#@app.route('/')
+#def home():
+#    con = lite.connect('ghost.db')
+#    cur = con.cursor()
+#    row = cur.execute("SELECT * FROM posts order by id desc").fetchone()
+#    post = {
+#        "url": url_from_ts_title(row[-2], row[3]),
+#        "title": row[2]
+#    }
+#    return render_template('home.html', post=post)
+
+
 @app.route('/')
 def home():
-    con = lite.connect('ghost.db')
-    cur = con.cursor()
-    row = cur.execute("SELECT * FROM posts order by id desc").fetchone()
-    post = {
-        "url": url_from_ts_title(row[-2], row[3]),
-        "title": row[2]
-    }
-    return render_template('home.html', post=post)
-
+    return render_template('home.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8082, debug=False)

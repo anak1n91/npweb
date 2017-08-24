@@ -30,23 +30,9 @@
             <div id="menu">
                 <ul>
                     <li {% block activeHome %}class="active"{% endblock %}><a href="/"><img src="/static/images/home.png" width="19" height="19" alt="" /> Home</a></li>
-                    <li {% block activeAbout %}{% endblock %}><a id="about-menu" href="#" title="Click for more"><img src="/static/images/about.png" height="19" width="19" alt="" /> About</a>
-                        <ul id="about-menu-1" class="dropdown-menu">
-                            <li><a href="/aboutsite"><img src="/static/images/about-site.png" width="19" height="19" alt=""/> About site</a></li>
-                            <li><a href="/about"><img src="/static/images/aboutme.png" height="19" width="19" /> About me</a></li>
-                        </ul>
-                    </li>
-                    <li {% block activeChat %}{% endblock %}><a href="/chat" title="Chat"><img src="/static/images/chat.png" height="19" width="19" alt="" /> Chat</a></li>
+                    <li {% block activeAbout %}{% endblock %}><a href="/about" title="Click for more"><img src="/static/images/about.png" height="19" width="19" alt="" /> About</a></li>
+                    <li><a href="http://blog.nightprojects.org" target="_blank"><img src="/static/images/blog.png" height="19" width="19" /> Blog</a></li>
                     <li {% block activeContact %}{% endblock %}><a href="/contact"><img src="/static/images/contact.png" height="19" width="19" /> Contact me</a></li>
-                    <li {% block activeOther %}{% endblock %}><a id="other-menu" href="#" title="Click for more"><img src="/static/images/extra.png" height="19" width="19" alt=""/> Extra</a>
-                        <ul id="other-menu-1" class="dropdown-menu">
-                            <li><a href="http://blog.nightprojects.org" title="Blog" target="_blank"><img src="/static/images/blog.png" height="19" width="19" alt="" /> My blog</a></li>
-                            <li><a href="http://git.nightprojects.org" title="Git server" target="_blank"><img src="/static/images/git.png" height="18" width="15" alt="" /> Git Server</a></li>
-                            <li><a href="http://goo.gl/a3vUFP" title="Google+" target="_blank"><img src="/static/images/google.png" height="19" width="19" alt="" /> Google+</a></li>
-                            <li><a href="https://twitter.com/anak1n91" title="Follow me on Twitter" target="_blank"><img height="15" width="18" alt="" src="/static/images/twitter.png" /> Twitter</a></li>
-                            <li><a href="https://instagram.com/anakin91" title="Follow me on Instagram" target="_blank"><img src="/static/images/instagram.gif" height="18" width="18" alt="" />Instagram</a></li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
         {% endblock %}
@@ -58,7 +44,7 @@
         </div><!-- wrapper -->
         {% block footer %}
             <div id="footer">
-                <p>Copyright <a href="/">NightProjects.org</a> 2014-2015 &bull; Design by <a href="/about" title="About me">Scott</a> &bull; Server powered by <a href="http://flask.pocoo.org" title="Flask: Python Miniframework" target="_blank">Flask</a> and <a href="http://www.funtoo.org" title="Funtoo Linux" target="_blank">Funtoo Linux</a></p>
+                <p>Copyright <a href="/">NightProjects.org</a> 2014-2017 &bull; Design by <a href="/about" title="About me">Scott</a> &bull; Server powered by <a href="http://flask.pocoo.org" title="Flask: Python Miniframework" target="_blank">Flask</a> and <a href="http://www.funtoo.org" title="Funtoo Linux" target="_blank">Funtoo Linux</a></p>
             </div>
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
             <script src="/static/js/nightprojects.js"></script>
